@@ -7,3 +7,5 @@ in this script we cleaned and encoded the data then we fited it with Randoum For
 # penguine_app.py
 it is the app that predicts the species of the pengiune by the parameters that you give it at the sidebar.
 
+# How to Run
+streamlit run penguin_app.py
