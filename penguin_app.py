@@ -35,7 +35,7 @@ else:
                 'sex': sex}
         features = pd.DataFrame(data, index=[0])
         return features
-    input_df = user_input_features()
+    input_df = user_input_f../StreamLit_demo/eatures()
 
 # read the original that we train the model with, encode it then add the parameters you added in the side bar to it
 penguins_raw=pd.read_csv('penguins_cleaned.csv')
@@ -58,7 +58,7 @@ else:
     st.write(df)
 
 # loading the saved model
-load_clf=pickle.load(open('../StreamLit_demo/penguins_clf.pkl','rb'))
+load_clf=pickle.load(open('penguins_clf.pkl','rb'))
 
 #predict the species 
 prediction=load_clf.predict(df)
