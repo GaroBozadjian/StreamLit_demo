@@ -3,7 +3,7 @@ from sklearn.ensemble import RandomForestClassifier
 import pickle
 
 # Read the data
-pen=pd.read_csv('../StreamLit_demo/penguins_cleaned.csv')
+pen=pd.read_csv('penguins_cleaned.csv')
 
 df=pen.copy()
 
@@ -33,4 +33,4 @@ clf=RandomForestClassifier()
 clf.fit(X,Y)
 
 # save the model
-pickle.dump(clf,open('../StreamLit_demo/penguins_clf.pkl','wb'))
+pickle.dump(clf,open('penguins_clf.pkl','wb'))
