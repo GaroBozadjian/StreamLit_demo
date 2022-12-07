@@ -38,7 +38,7 @@ else:
     input_df = user_input_features()
 
 # read the original that we train the model with, encode it then add the parameters you added in the side bar to it
-penguins_raw=pd.read_csv('../StreamLit_demo/penguins_cleaned.csv')
+penguins_raw=pd.read_csv('penguins_cleaned.csv')
 penguins=penguins_raw.drop('species',axis=1)
 df=pd.concat([input_df,penguins],axis=0)
 
