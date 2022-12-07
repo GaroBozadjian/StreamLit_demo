@@ -35,7 +35,7 @@ else:
                 'sex': sex}
         features = pd.DataFrame(data, index=[0])
         return features
-    input_df = user_input_f../StreamLit_demo/eatures()
+    input_df = user_input_features()
 
 # read the original that we train the model with, encode it then add the parameters you added in the side bar to it
 penguins_raw=pd.read_csv('penguins_cleaned.csv')
